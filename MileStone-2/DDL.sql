@@ -46,15 +46,15 @@ CREATE TABLE Schedule (
 );
 
 -- Create the Diagnose table
-CREATE TABLE Diagnose(
-appt int NOT NULL,
-Doctor_id int NOT NULL,
-diagnosis varchar(40) NOT NULL,
-prescription varchar(50) NOT NULL,
-FOREIGN KEY (appt) REFERENCES Appointment (id) ON DELETE CASCADE,
-FOREIGN KEY ( Doctor_id) REFERENCES Doctor ( Doctor_id) ON DELETE CASCADE,
-PRIMARY KEY (appt,Doctor_id)
-);
+-- CREATE TABLE Diagnose(
+-- appt int NOT NULL,
+-- Doctor_id int NOT NULL,
+-- diagnosis varchar(40) NOT NULL,
+-- prescription varchar(50) NOT NULL,
+-- FOREIGN KEY (appt) REFERENCES Appointment (id) ON DELETE CASCADE,
+-- FOREIGN KEY ( Doctor_id) REFERENCES Doctor ( Doctor_id) ON DELETE CASCADE,
+-- PRIMARY KEY (appt,Doctor_id)
+-- );
 
 -- Create the Appointment table
 CREATE TABLE Appointment (
